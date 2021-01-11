@@ -22,7 +22,7 @@ public class Constants {
     public static final int STORAGE_REQ_CODE =200;
     public static final int IMAGE_PICK_GALLERY_CODE =300;
     public static final int IMAGE_PICK_CAMERA_CODE =400;
-    public static final String API_KEY = "23";//"AIzaSyBnMpyF5P5Ho7x6toJa1gdTbAkQBgLZzNs";
+    public static final String API_KEY = "23";
 
 
 }
