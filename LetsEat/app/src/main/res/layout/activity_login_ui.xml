@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boundary.LoginUI">
+
+    <ImageView
+        android:id="@+id/foodIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/letseatlogo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:id="@+id/emailTV"
+        android:layout_below="@+id/foodIcon"
+        android:text="@string/email"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/emailET"
+        android:layout_below="@+id/emailTV"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        app:met_floatingLabel="normal"
+        android:hint="@string/email"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:id="@+id/PW_TV"
+        android:layout_below="@+id/emailET"
+        android:text="@string/password"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/PW_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/passwordET"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        app:met_floatingLabel="normal"
+        android:inputType="textPassword"
+        android:hint="@string/password"/>
+
+
+
+    <TextView
+        android:id="@+id/forgotPW_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/forgotPW"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@+id/passwordET"
+        android:textColor="#FF0000"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotPW_TV"
+        android:id="@+id/loginBtn"
+        android:text="@string/loginBtn"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/buttons_main"
+        android:shadowColor="#FF0000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"/>
+
+
+    <TextView
+        android:id="@+id/notHaveAccountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newUser"
+        android:textAlignment="center"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FF0000"
+        />
+
+
+
+</RelativeLayout>

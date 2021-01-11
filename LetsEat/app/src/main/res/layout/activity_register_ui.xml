@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boundary.RegisterUI">
+
+
+
+    <ImageView
+        android:id="@+id/foodIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/letseatlogo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription"
+        />
+    <TextView
+        android:id="@+id/longTextCreateAcc"
+        android:layout_below="@+id/foodIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fillInDetails"
+        android:layout_marginHorizontal="50dp"
+        />
+
+    <TextView
+        android:id="@+id/longTextpwReq"
+        android:layout_below="@+id/longTextCreateAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pwRequirements"
+        android:layout_marginHorizontal="50dp"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/usernameET"
+        android:layout_below="@+id/longTextpwReq"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="0dp"
+        app:met_floatingLabel="normal"
+        android:hint="@string/username"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/emailET"
+        android:layout_below="@+id/usernameET"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="0dp"
+        app:met_floatingLabel="normal"
+        android:hint="@string/email"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/passwordET"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="0dp"
+        app:met_floatingLabel="normal"
+        android:inputType="textPassword"
+        android:hint="@string/newPW"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/cfmPasswordET"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="0dp"
+        app:met_floatingLabel="normal"
+        android:inputType="textPassword"
+        android:hint="@string/cfmPW"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cfmPasswordET"
+        android:id="@+id/registerBtn"
+        android:text="@string/createBtn"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/buttons_main"
+        android:shadowColor="#FF0000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/haveAccountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/existingUser"
+        android:textAlignment="center"
+        android:layout_below="@+id/registerBtn"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FF0000"
+        />
+
+
+
+</RelativeLayout>
